@@ -19,6 +19,8 @@ public class Main25Activity extends AppCompatActivity {
 
     GPUImageFilter mFilter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
