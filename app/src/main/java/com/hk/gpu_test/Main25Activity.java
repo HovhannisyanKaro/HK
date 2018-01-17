@@ -10,6 +10,7 @@ import butterknife.ButterKnife;
 import jp.co.cyberagent.android.gpuimage.GPUImageFilter;
 import jp.co.cyberagent.android.gpuimage.GPUImageView;
 
+
 public class Main25Activity extends AppCompatActivity {
 
     @BindView(R.id.gpu_image_view)
