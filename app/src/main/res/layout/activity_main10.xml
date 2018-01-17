@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hk.camera_preview_app.Main10Activity">
+
+   <RelativeLayout
+       android:layout_weight="1"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent">
+      <FrameLayout
+          android:id="@+id/camera_preview"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          />
+
+      <ImageView
+          android:id="@+id/image_result"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+   </RelativeLayout>
+
+
+   <Button
+       android:onClick="getPicClick"
+       android:id="@+id/button_capture"
+       android:text="Capture"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       />
+
+</LinearLayout>

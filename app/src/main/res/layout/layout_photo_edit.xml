@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <jp.co.cyberagent.android.gpuimage.GPUImageView
+            android:id="@+id/gpu_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_edit_tool_with_wpinner_panel_height"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:minHeight="@dimen/photo_edit_tool_with_wpinner_panel_height"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progressDrawable="@drawable/custom_seekbar"
+            android:theme="@style/MySeekBarTheme" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_photo_edit_panel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo_edit_tool_panel_height"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:id="@+id/rl_contrast"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_contrast" />
+
+                <TextView
+                    style="@style/PhotoEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/contrast" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_brightness"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_brightness" />
+
+                <TextView
+                    style="@style/PhotoEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/brightness" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_exposure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_exposure" />
+
+                <TextView
+                    style="@style/PhotoEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/exposure" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sharpness"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_sharpness" />
+
+                <TextView
+                    style="@style/PhotoEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/sharpness" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_saturation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_saturation" />
+
+                <TextView
+                    style="@style/PhotoEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/saturation" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="tvType"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_edit_tool_panel_height">77dp</dimen>
+    <dimen name="photo_edit_tool_with_wpinner_panel_height">117dp</dimen>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hk">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".main.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".get_methods_from_class.Main2Activity" />
+        <activity android:name=".custom_camera_preview.Main4Activity" />
+        <activity android:name=".graphics.AnimationActivity001" />
+        <activity android:name=".graphics.ActivityAnimation002" />
+        <activity android:name=".get_transparent_part_from_image.Main5Activity" />
+        <activity android:name=".cash_bitmap.Main6Activity" />
+        <activity android:name=".tickle_single_choise_personages_heads.Main7Activity" />
+        <activity android:name=".download_video.Main8Activity" />
+        <activity android:name=".tickle_zooming_moving_image_view.Main9Activity" />
+        <activity android:name=".camera_preview_app.Main10Activity" />
+        <activity
+            android:name=".camera_preview_app.image_processing.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".camera_preview_app.image_processing.CropActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camera_preview_app.image_processing.TemplateSelectDialog"
+            android:configChanges="keyboardHidden"
+            android:label="@string/sd_select_template_text"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".share_with_viber.Main11Activity" />
+        <activity android:name=".edit_photo.Main12Activity" />
+        <activity android:name=".edit_photo.Main13Activity" />
+        <activity android:name=".camera_preview_2.Main14Activity" />
+        <activity android:name=".camera_preview_2.Main15Activity" />
+        <activity android:name=".move_image_view_for_crop.Main16Activity" />
+        <activity android:name=".touch_imageview_master.Main17Activity" />
+        <activity android:name=".touch_imageview_master.MirroringExampleActivity" />
+        <activity android:name=".touch_imageview_master.SingleTouchImageViewActivity" />
+        <activity android:name=".touch_imageview_master.SwitchImageExampleActivity" />
+        <activity android:name=".touch_imageview_master.SwitchScaleTypeExampleActivity" />
+        <activity android:name=".touch_imageview_master.ViewPagerExampleActivity" />
+        <activity android:name=".touch_image_view_mytest.Main18Activity" />
+        <activity android:name=".single_selection_recycler_view.Main19Activity" />
+        <activity android:name=".cool_animation.Main20Activity" />
+        <activity android:name=".papers.Main21Activity"></activity>
+        <activity android:name=".single_task_test.Main22Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".single_task_test.Main23Activity"
+            android:launchMode="singleTask" />
+        <activity android:name=".single_task_test.Main24Activity" />
+        <activity android:name=".gpu_test.Main25Activity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hk.cash_bitmap.Main6Activity">
+
+    <ImageView
+        android:background="@drawable/girl"
+        android:id="@+id/imageview_id"
+        android:layout_width="150dp"
+        android:layout_height="250dp" />
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/imageview_id_2"
+        android:layout_width="150dp"
+        android:layout_height="250dp" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:text="cash"
+        android:onClick="cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="getCash"
+        android:onClick="getCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
